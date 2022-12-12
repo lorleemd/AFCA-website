@@ -1,0 +1,14 @@
+home - Done
+doctors - Done  "Potentially fix the content"  Used slightly different styling 
+team - Done     "Potentially fix the content"  Used slightly different styling 
+medical-services - Done "Fix the picture"
+forms - Done
+contact us - Done
+adult services - Done
+child medical services content was not copied.  Recheck way back machine.
+teen medical services - Done "Fix the pictures"
+
+Navbar broken 
+Footer broken
+
+FIX ALL PAGE TITLES 

@@ -3561,7 +3561,7 @@ html[xmlns] .flexslider .slides {
 
 #layerslider-wrapper .ls-shadow-top {
     position: absolute;
-    background-image: url(/web/20221026085233im_/https://alaskafamilycare.com/wp-content/themes/Avada/assets/images/shadow-top.png);
+    /*background-image: url(https://alaskafamilycare.com/wp-content/themes/Avada/assets/images/shadow-top.png);*/
     background-repeat: no-repeat;
     background-position: top center;
     height: 42px;
@@ -3572,7 +3572,7 @@ html[xmlns] .flexslider .slides {
 
 #layerslider-wrapper .ls-shadow-bottom {
     position: absolute;
-    background-image: url(/web/20221026085233im_/https://alaskafamilycare.com/wp-content/themes/Avada/assets/images/shadow-bottom.png);
+    /*background-image: url(https://alaskafamilycare.com/wp-content/themes/Avada/assets/images/shadow-bottom.png);*/
     background-repeat: no-repeat;
     background-position: bottom center;
     height: 32px;
