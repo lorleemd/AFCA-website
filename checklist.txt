@@ -8,7 +8,7 @@ adult services - Done
 child medical services content was not copied.  Recheck way back machine.
 teen medical services - Done "Fix the pictures"
 
-Navbar broken 
+Navbar broken -Fixed 1/16/2023 except mobile
 Footer broken
 
 FIX ALL PAGE TITLES 

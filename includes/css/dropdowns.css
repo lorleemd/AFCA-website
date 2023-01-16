@@ -1,0 +1,19 @@
+.fusion-dropdown-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sub {
+    display: none;
+    position: fixed;
+    background-color: #3a94cd;
+    width: 150px;
+    padding-left: 10px !important;
+    border-radius: 2px;
+    margin-top: -5px !important;
+
+  }
+  
+  .fusion-dropdown-menu:hover .sub {
+    display: block !important;
+  }
