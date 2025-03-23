@@ -24,3 +24,9 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
+
+  .arrow.left:active {
+    -webkit-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+}

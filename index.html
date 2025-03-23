@@ -350,6 +350,7 @@
         type="text/css" media="all">
     <link rel="stylesheet" href="includes/css/dropdowns.css" type="text/css">
     <link rel="stylesheet" href="includes/css/W3arrows.css" type="text/css">
+    <link rel="stylesheet" href="includes/css/payment.css" type="text/css">
     <!--[if IE]>
     <link rel='stylesheet' id='avada-IE-css'  href='https://alaskafamilycare.com/includes/css/Avada.css' type='text/css' media='all' />
     <style id='avada-IE-inline-css' type='text/css'>
@@ -361,8 +362,8 @@
         href="includes/css/Fusion.css"
         type="text/css" media="all">
         <script src="includes/js/jquery-3.6.0.js"></script>
+        <script src="includes/js/payment.js"></script>
     <link rel="shortlink" href="https://alaskafamilycare.com/">
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
         style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
@@ -492,7 +493,7 @@
             </filter>
         </defs>
     </svg> <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-
+    
     <div id="boxed-wrapper" style="height: auto;">
         <div class="fusion-sides-frame"></div>
         <div id="wrapper" class="fusion-wrapper">
@@ -520,7 +521,7 @@
 
                                     </a>
                                 </div>
-                                <div class="fusion-mobile-menu-icons">
+                                <div class="fusion-mobile-menu-icons" style="display: none;">
                                     <a href="#" class="fusion-icon fusion-icon-bars" aria-label="Toggle mobile menu"
                                         aria-expanded="false" aria-controls="mobile-menu-afc"></a>
 
@@ -532,7 +533,7 @@
                         </div>
                         <div class="fusion-secondary-main-menu" style="">
                             <div class="fusion-row">
-                                <nav class="fusion-main-menu" aria-label="Main Menu" style="">
+                                <nav class="fusion-main-menu" aria-label="Main Menu" style="display: block;">
                                     <!--
                                     <div class="fusion-overlay-search" style="max-width: 816.704px;">
                                         <form role="search"
@@ -981,93 +982,85 @@
                                         </div>
                                     </div>
                                 </div>
+                                <style type="text/css">
+                                    .fusion-button.button-1 .fusion-button-text,
+                                    .fusion-button.button-1 i {
+                                        color: #ffffff;
+                                    }
+
+                                    .fusion-button.button-1 .fusion-button-icon-divider {
+                                        border-color: #ffffff;
+                                    }
+
+                                    .fusion-button.button-1:hover .fusion-button-text,
+                                    .fusion-button.button-1:hover i,
+                                    .fusion-button.button-1:focus .fusion-button-text,
+                                    .fusion-button.button-1:focus i,
+                                    .fusion-button.button-1:active .fusion-button-text,
+                                    .fusion-button.button-1:active {
+                                        color: #000000;
+                                    }
+
+                                    .fusion-button.button-1:hover .fusion-button-icon-divider,
+                                    .fusion-button.button-1:hover .fusion-button-icon-divider,
+                                    .fusion-button.button-1:active .fusion-button-icon-divider {
+                                        border-color: #000000;
+                                    }
+
+                                    .fusion-button.button-1:hover,
+                                    .fusion-button.button-1:focus,
+                                    .fusion-button.button-1:active {
+                                        border-color: #000000;
+                                        border-width: 1px;
+                                    }
+
+                                    .fusion-button.button-1 {
+                                        border-color: #ffffff;
+                                        border-width: 1px;
+                                        border-radius: 4px;
+                                    }
+
+                                    .fusion-button.button-1.button-3d {
+                                        -webkit-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                        -moz-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                        box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                    }
+
+                                    .button-1.button-3d:active {
+                                        -webkit-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                        -moz-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                        box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                    }
+
+                                    .fusion-button.button-1 {
+                                        background: #00aab7;
+                                        background-image: -webkit-gradient(linear, left bottom, left top, from(#38afb7), to(#00aab7));
+                                        background-image: -webkit-linear-gradient(bottom, #38afb7, #00aab7);
+                                        background-image: -moz-linear-gradient(bottom, #38afb7, #00aab7);
+                                        background-image: -o-linear-gradient(bottom, #38afb7, #00aab7);
+                                        background-image: linear-gradient(to top, #38afb7, #00aab7);
+                                    }
+
+                                    .fusion-button.button-1:hover,
+                                    .button-1:focus,
+                                    .fusion-button.button-1:active {
+                                        background: #3aafb7;
+                                        background-image: -webkit-gradient(linear, left bottom, left top, from(#00aab7), to(#3aafb7));
+                                        background-image: -webkit-linear-gradient(bottom, #00aab7, #3aafb7);
+                                        background-image: -moz-linear-gradient(bottom, #00aab7, #3aafb7);
+                                        background-image: -o-linear-gradient(bottom, #00aab7, #3aafb7);
+                                        background-image: linear-gradient(to top, #00aab7, #3aafb7);
+                                    }
+                                </style>
                                 <div class="fusion-fullwidth fullwidth-box fusion-builder-row-3 hundred-percent-fullwidth non-hundred-percent-height-scrolling"
                                     style="background-color: #ffffff;background-position: center center;background-repeat: no-repeat;padding-top:0px;padding-right:30px;padding-bottom:0px;padding-left:30px;">
-                                    <div class="fusion-builder-row fusion-row ">
-                                        <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4 fusion-builder-column-6 fusion-one-fourth fusion-column-first 1_4"
-                                            style="margin-top:0px;margin-bottom:20px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );margin-right: 4%;">
+                                    <div class="row">
+                                        <div class="col-md-4">
                                             <div class="fusion-column-wrapper"
-                                                style="padding: 0px 0px 0px 0px;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"
-                                                data-bg-url="">
-                                                <div class="fusion-clearfix"></div>
-                                            </div>
-                                        </div>
-                                        <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4 fusion-builder-column-7 fusion-one-fourth 1_4"
-                                            style="margin-top:0px;margin-bottom:20px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );margin-right: 4%;">
-                                            <div class="fusion-column-wrapper"
-                                                style="padding: 25px 0px; background-position: left top; background-repeat: no-repeat; background-size: cover; height: auto;"
-                                                data-bg-url="">
+                                            style="padding: 25px 0px; background-position: left top; background-repeat: no-repeat; background-size: cover; height: auto;"
+                                            data-bg-url="">
                                                 <div class="fusion-button-wrapper fusion-aligncenter">
-                                                    <style type="text/css">
-                                                        .fusion-button.button-1 .fusion-button-text,
-                                                        .fusion-button.button-1 i {
-                                                            color: #ffffff;
-                                                        }
-
-                                                        .fusion-button.button-1 .fusion-button-icon-divider {
-                                                            border-color: #ffffff;
-                                                        }
-
-                                                        .fusion-button.button-1:hover .fusion-button-text,
-                                                        .fusion-button.button-1:hover i,
-                                                        .fusion-button.button-1:focus .fusion-button-text,
-                                                        .fusion-button.button-1:focus i,
-                                                        .fusion-button.button-1:active .fusion-button-text,
-                                                        .fusion-button.button-1:active {
-                                                            color: #000000;
-                                                        }
-
-                                                        .fusion-button.button-1:hover .fusion-button-icon-divider,
-                                                        .fusion-button.button-1:hover .fusion-button-icon-divider,
-                                                        .fusion-button.button-1:active .fusion-button-icon-divider {
-                                                            border-color: #000000;
-                                                        }
-
-                                                        .fusion-button.button-1:hover,
-                                                        .fusion-button.button-1:focus,
-                                                        .fusion-button.button-1:active {
-                                                            border-color: #000000;
-                                                            border-width: 1px;
-                                                        }
-
-                                                        .fusion-button.button-1 {
-                                                            border-color: #ffffff;
-                                                            border-width: 1px;
-                                                            border-radius: 4px;
-                                                        }
-
-                                                        .fusion-button.button-1.button-3d {
-                                                            -webkit-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
-                                                            -moz-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
-                                                            box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
-                                                        }
-
-                                                        .button-1.button-3d:active {
-                                                            -webkit-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
-                                                            -moz-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
-                                                            box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
-                                                        }
-
-                                                        .fusion-button.button-1 {
-                                                            background: #00aab7;
-                                                            background-image: -webkit-gradient(linear, left bottom, left top, from(#38afb7), to(#00aab7));
-                                                            background-image: -webkit-linear-gradient(bottom, #38afb7, #00aab7);
-                                                            background-image: -moz-linear-gradient(bottom, #38afb7, #00aab7);
-                                                            background-image: -o-linear-gradient(bottom, #38afb7, #00aab7);
-                                                            background-image: linear-gradient(to top, #38afb7, #00aab7);
-                                                        }
-
-                                                        .fusion-button.button-1:hover,
-                                                        .button-1:focus,
-                                                        .fusion-button.button-1:active {
-                                                            background: #3aafb7;
-                                                            background-image: -webkit-gradient(linear, left bottom, left top, from(#00aab7), to(#3aafb7));
-                                                            background-image: -webkit-linear-gradient(bottom, #00aab7, #3aafb7);
-                                                            background-image: -moz-linear-gradient(bottom, #00aab7, #3aafb7);
-                                                            background-image: -o-linear-gradient(bottom, #00aab7, #3aafb7);
-                                                            background-image: linear-gradient(to top, #00aab7, #3aafb7);
-                                                        }
-                                                    </style><a
+                                                    <a
                                                         class="fusion-button button-3d button-xlarge button-custom button-1 fusion-button-span-no "
                                                         target="_blank" rel="noopener noreferrer"
                                                         href="https://myhealthrecord.com/Portal/SSO"><i class="arrow left"></i>&nbsp<span
@@ -1076,11 +1069,94 @@
                                                 <div class="fusion-clearfix"></div>
                                             </div>
                                         </div>
-                                        <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4 fusion-builder-column-8 fusion-one-fourth 1_4"
-                                            style="margin-top:0px;margin-bottom:20px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );margin-right: 4%;">
+                                        <div class="col-md-4">
                                             <div class="fusion-column-wrapper"
-                                                style="padding: 25px 0px; background-position: left top; background-repeat: no-repeat; background-size: cover; height: auto;"
-                                                data-bg-url="">
+                                            style="padding: 25px 0px; background-position: left top; background-repeat: no-repeat; background-size: cover; height: auto;"
+                                            data-bg-url="">
+                                                <div class="fusion-button-wrapper fusion-aligncenter">
+                                                    <style type="text/css">
+                                                        .fusion-button.button-3 .fusion-button-text,
+                                                        .fusion-button.button-3 i {
+                                                            color: #ffffff;
+                                                        }
+
+                                                        .fusion-button.button-3 .fusion-button-icon-divider {
+                                                            border-color: #ffffff;
+                                                        }
+
+                                                        .fusion-button.button-3:hover .fusion-button-text,
+                                                        .fusion-button.button-3:hover i,
+                                                        .fusion-button.button-3:focus .fusion-button-text,
+                                                        .fusion-button.button-3:focus i,
+                                                        .fusion-button.button-3:active .fusion-button-text,
+                                                        .fusion-button.button-3:active {
+                                                            color: #000000;
+                                                        }
+
+                                                        .fusion-button.button-3:hover .fusion-button-icon-divider,
+                                                        .fusion-button.button-3:hover .fusion-button-icon-divider,
+                                                        .fusion-button.button-3:active .fusion-button-icon-divider {
+                                                            border-color: #000000;
+                                                        }
+
+                                                        .fusion-button.button-3:hover,
+                                                        .fusion-button.button-3:focus,
+                                                        .fusion-button.button-3:active {
+                                                            border-color: #000000;
+                                                            border-width: 1px;
+                                                        }
+
+                                                        .fusion-button.button-3 {
+                                                            border-color: #ffffff;
+                                                            border-width: 1px;
+                                                            border-radius: 4px;
+                                                        }
+
+                                                        .fusion-button.button-3.button-3d {
+                                                            -webkit-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                                            -moz-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                                            box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                                        }
+
+                                                        .button-3.button-3d:active {
+                                                            -webkit-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                                            -moz-box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                                            box-shadow: inset 0px 1px 0px #fff, 0px 5px 0px #ffffff, 1px 7px 7px 3px rgba(0, 0, 0, 0.3);
+                                                        }
+
+                                                        .fusion-button.button-3 {
+                                                            background: #52a33c;
+                                                            background-image: -webkit-gradient(linear, left bottom, left top, from(#3B7A2F ), to(#52a33c));
+                                                            background-image: -webkit-linear-gradient(bottom, #3B7A2F , #52a33c);
+                                                            background-image: -moz-linear-gradient(bottom, #3B7A2F , #52a33c);
+                                                            background-image: -o-linear-gradient(bottom, #3B7A2F , #52a33c);
+                                                            background-image: linear-gradient(to top, #3B7A2F , #52a33c);
+                                                        }
+
+                                                        .fusion-button.button-3:hover,
+                                                        .button-3:focus,
+                                                        .fusion-button.button-3:active {
+                                                            color: #ffffff;
+                                                            background: #3B7A2F;
+                                                            background-image: -webkit-gradient(linear, left bottom, left top, from(#52a33c), to(#3B7A2F ));
+                                                            background-image: -webkit-linear-gradient(bottom, #52a33c, #3B7A2F );
+                                                            background-image: -moz-linear-gradient(bottom, #52a33c, #3B7A2F );
+                                                            background-image: -o-linear-gradient(bottom, #52a33c, #3B7A2F );
+                                                            background-image: linear-gradient(to top, #52a33c, #3B7A2F );
+                                                        }
+                                                    </style><a
+                                                        class="fusion-button button-3d button-xlarge button-custom button-3 fusion-button-span-no "
+                                                        target="_blank" rel="noopener noreferrer"
+                                                        href="https://pay.balancecollect.com/m/alaskafamilycareassociates"><i class="arrow left"></i>&nbsp<span
+                                                            class="fusion-button-text">Pay Bill Online</span></a>
+                                                </div>
+                                                <div class="fusion-clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="fusion-column-wrapper"
+                                            style="padding: 25px 0px; background-position: left top; background-repeat: no-repeat; background-size: cover; height: auto;"
+                                            data-bg-url="">
                                                 <div class="fusion-button-wrapper fusion-aligncenter">
                                                     <style type="text/css">
                                                         .fusion-button.button-2 .fusion-button-text,
@@ -1160,14 +1236,7 @@
                                                 <div class="fusion-clearfix"></div>
                                             </div>
                                         </div>
-                                        <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_4 fusion-builder-column-9 fusion-one-fourth fusion-column-last 1_4"
-                                            style="margin-top:0px;margin-bottom:20px;width:25%;width:calc(25% - ( ( 4% + 4% + 4% ) * 0.25 ) );">
-                                            <div class="fusion-column-wrapper"
-                                                style="padding: 0px 0px 0px 0px;background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"
-                                                data-bg-url="">
-                                                <div class="fusion-clearfix"></div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="fusion-fullwidth fullwidth-box fusion-builder-row-4 nonhundred-percent-fullwidth non-hundred-percent-height-scrolling"
@@ -1377,6 +1446,9 @@
     <div class="fusion-boxed-shadow"></div>
     <a class="fusion-one-page-text-link fusion-page-load-link"></a>
 
-    
+    <div class="payment-banner" onclick="window.location.href='https://pay.balancecollect.com/m/alaskafamilycareassociates'" style="width: fit-content;">
+        <span class="payment-text"><div style="text-align: center;">We Now Accept Payments Online.</div><div style="text-align: center;">Click here to Pay Online.</span></span>
+        <button class="close-btn" type="button" onclick="closeBanner()">x</button>
+    </div>
     </body>
 </html>
