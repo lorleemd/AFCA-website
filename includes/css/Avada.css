@@ -4,6 +4,10 @@
     transition: opacity 0.3s ease-in-out;
 }
 
+.fusion-mobile-nav-item .fusion-bar-highlight{
+    padding-top: 7px;
+}
+
 #mobile-menu-afc[aria-expanded="true"] {
     display: block;
     opacity: 1;

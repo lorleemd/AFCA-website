@@ -1,3 +1,13 @@
+.fusion-open-submenu::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent #efefef;
+  margin-left: 5px;
+}
+
 .fusion-icon-bars {
   display: inline-block;
   width: 20px;
