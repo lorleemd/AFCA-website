@@ -1,3 +1,66 @@
+.fusion-icon-bars {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-top: 3px solid #efefef;
+  border-bottom: 3px solid #efefef;
+  margin: 10px 0;
+}
+
+.fusion-icon-bars::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #efefef;
+  margin: 5.5px 0;
+}
+
+@media (max-width: 800px) {
+  .navbar-expand-custom {
+     flex-direction: column;
+     align-items: center;
+   }
+  .navbar-expand-custom.navbar-collapse {
+     display: none;
+   }
+  .navbar-expand-custom.navbar-toggler {
+     display: block;
+   }
+ }
+ 
+ @media (min-width: 801px) {
+  .navbar-expand-custom {
+     flex-direction: row;
+     align-items: center;
+   }
+  .navbar-expand-custom.navbar-collapse {
+     display: flex;
+   }
+  .navbar-expand-custom.navbar-toggler {
+     display: none;
+   }
+ }
+ 
+ .navbar-expand-custom.navbar-toggler {
+   border: none;
+   padding: 0.5rem 1rem;
+   font-size: 1.25rem;
+   line-height: 1;
+   background-color: transparent;
+   border-radius: 0.25rem;
+ }
+ 
+ .navbar-expand-custom.navbar-toggler:hover {
+   background-color: #ccc;
+ }
+ 
+ .navbar-expand-custom.navbar-toggler[aria-expanded="true"] {
+   background-color: #ccc;
+ }
+
+
 .fusion-dropdown-menu {
     position: relative;
     display: inline-block;
